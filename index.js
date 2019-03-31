@@ -19,9 +19,9 @@ switch(args[0]) {
          case prefix + "help":
                   let hembed = new Discord.RichEmbed()
                   .setColor('#66ff66')
-                  .addField("»»»»»Moderator«««««")
-                  .addField(prefix + "tempmute" " <@nickname> <time> <cause>")
-                  .addField(prefix + "tempban" " <@nickname> <time> <cause>")
+                  .addField("»»»»»Moderator«««««"
+                  prefix + "tempmute" "<@никнейм> <время> <причина>"
+                  prefix + "tempban" "<@никнейм> <время> <причина>")
                   
                   message.channel.send(hembed)
                   
