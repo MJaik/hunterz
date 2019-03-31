@@ -8,7 +8,7 @@ client.login(process.env.BOT_TOKEN)
 
 
 client.on("message", async message => {   
-client.user.setActivity('Наконец-то запустился | Сделал MJaik#2003',{ type: 'PLAYING' }) 
+client.user.setActivity('*help | Сделал MJaik#2003',{ type: 'PLAYING' }) 
 if(message.author.bot) return;
 if(message.channel.type === "dm") return;
 
