@@ -23,15 +23,16 @@ switch(args[0]) {
                   .addField("»»»»»Moderator«««««", "Модерация")
                   .addField(prefix + "tempban" + " <@никнейм> <время> <причина>", "Забанить участника на время")
                   .addField(prefix + "tempmute" + "<@никнейм> <время> <причина>", "Замутить участника на время")
-                  .addField(prefix + "warn" + "<@никнейм> <причина>", "Выдать предупреждение")
-                  .addField(prefix + "kick" + "<@никнейм> <причина>", "Кикнуть участника")
+                  .addField(prefix + "warn" + " <@никнейм> <причина>", "Выдать предупреждение")
+                  .addField(prefix + "kick" + " <@никнейм> <причина>", "Кикнуть участника")
                   .addField("»»»»»Развлечение«««««", "Команды для веселья")
-                  .addField(prefix + "kiss" + "<@никнейм>", "Поцеловать участника/участницу")
+                  .addField(prefix + "kiss" + " <@никнейм>", "Поцеловать участника/участницу")
                   message.channel.send(hembed)
                   
                   break;
                   
          case prefix + "tempban":
                   break;
+                  
 }
 });
