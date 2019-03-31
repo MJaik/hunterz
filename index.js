@@ -3,7 +3,7 @@ const client = new Discord.Client
 let prefix = '1'
 
 
-client.login('NTYxMjAzMDQ0NzM4NDAwMjYz.XKCHHg.Tvx8BI5Jisc1gbicDPOyy6KTtZY')
+client.login(process.env.BOT_TOKEN)
 
 
 
