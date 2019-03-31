@@ -20,8 +20,8 @@ switch(args[0]) {
                   let hembed = new Discord.RichEmbed()
                   .setColor('#66ff66')
                   .setDescription("Команды на сервере")
-                  .addField("»»»»»Moderator«««««")
-                  .addField(prefix + "tempban" + " <@nickname> <time> <причина>")
+                  .addField("»»»»»Moderator«««««", "Модерация")
+                  .addField(prefix + "tempban" + " <@nickname> <time> <причина>", "Забанить участника")
                   
                   message.channel.send(hembed)
                   
