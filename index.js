@@ -48,5 +48,5 @@ if (!kUser) return message.channel.send("Не найден участник")
 let kReason = args.join(" ").slice(22)
 
 message.guild.member(kUser).kick(kReason)
-message.channel.
+         }
 });
