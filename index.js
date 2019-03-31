@@ -21,19 +21,31 @@ switch(args[0]) {
                   .setColor('#66ff66')
                   .setDescription("Команды на сервере")
                   .addField("»»»»»Moderator«««««", "Модерация")
-                  .addField(prefix + "ban" + " <@никнейм> <причина>")
-                  .addField(prefix + "tempban" + " <@никнейм> <время> <причина>", "Забанить участника на время")
-                  .addField(prefix + "tempmute" + "<@никнейм> <время> <причина>", "Замутить участника на время")
-                  .addField(prefix + "warn" + " <@никнейм> <причина>", "Выдать предупреждение")
-                  .addField(prefix + "kick" + " <@никнейм> <причина>", "Кикнуть участника")
+                  .addField(prefix + "ban" + " <@никнейм> <причина>", "Бан участника (НЕ РАБОТАЕТ!)")
+                  .addField(prefix + "tempban" + " <@никнейм> <время> <причина>", "Забанить участника на время (НЕ РАБОТАЕТ!)")
+                  .addField(prefix + "tempmute" + "<@никнейм> <время> <причина>", "Замутить участника на время (НЕ РАБОТАЕТ!)")
+                  .addField(prefix + "warn" + " <@никнейм> <причина>", "Выдать предупреждение (НЕ РАБОТАЕТ!)")
+                  .addField(prefix + "kick" + " <@никнейм> <причина>", "Кикнуть участника (ТЕСТИРУЕТСЯ)")
                   .addField("»»»»»Развлечение«««««", "Команды для веселья")
-                  .addField(prefix + "kiss" + " <@никнейм>", "Поцеловать участника/участницу")
+                  .addField(prefix + "kiss" + " <@никнейм>", "Поцеловать участника/участницу (НЕ РАБОТАЕТ!)")
                   message.channel.send(hembed)
                   
                   break;
                   
-         case prefix + "tempban":
+         case prefix + "kick":
                   break;
                   
 }
+         if(cmd === '$(prefix)kick'){
+                  
+                  let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+                  if(!kUser) return message.channel.send("Не найден указаный участник")
+                  let kReason = args.join(" ").slice(22);
+                  if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("Вам нельзя это делать!");
+                  if(kUser.hasPermission("ADMINISTRATOR")) return message.channel.send("Этот человек не может быть кикнутым");
+                  
+                  message.guild.member(kUser).kick(kReason)
+                  
+                  return;
+         }
 });
