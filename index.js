@@ -21,7 +21,10 @@ switch(args[0]) {
                   .setColor('#66ff66')
                   .setDescription("Команды на сервере")
                   .addField("»»»»»Moderator«««««", "Модерация")
-                  .addField(prefix + "tempban" + " <@nickname> <time> <причина>", "Забанить участника")
+                  .addField(prefix + "tempban" + " <@никнейм> <время> <причина>", "Забанить участника на время")
+                  .addField(prefix + "tempmute" + "<@никнейм> <время> <причина>", "Замутить участника на время")
+                  .addField(prefix + "warn" + "<@никнейм> <причина>", "Выдать предупреждение")
+                  .addField(prefix + "kick" + "<@никнейм> <причина>", "Кикнуть участника")
                   
                   message.channel.send(hembed)
                   
