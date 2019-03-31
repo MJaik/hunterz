@@ -25,6 +25,7 @@ switch(args[0]) {
                   .addField(prefix + "tempmute" + "<@никнейм> <время> <причина>", "Замутить участника на время")
                   .addField(prefix + "warn" + "<@никнейм> <причина>", "Выдать предупреждение")
                   .addField(prefix + "kick" + "<@никнейм> <причина>", "Кикнуть участника")
+                  .addField("»»»»»Развлечение«««««")
                   
                   message.channel.send(hembed)
                   
