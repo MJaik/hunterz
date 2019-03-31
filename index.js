@@ -36,7 +36,7 @@ switch(args[0]) {
                   break;
                   
 }
-         if(cmd === '$(prefix)kick'){
+         if cmd === '$(prefix)kick' {
                   
                   let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[1]));
                   if(!kUser) return message.channel.send("Не найден указаный участник")
@@ -50,4 +50,5 @@ switch(args[0]) {
                   
                   return;
          }
+         
 });
