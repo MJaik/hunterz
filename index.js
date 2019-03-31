@@ -19,7 +19,7 @@ switch(args[0]) {
          case prefix + "help":
                   let hembed = new Discord.RichEmbed()
                   .setColor('#66ff66')
-                  .addField("»»»»»Moderator«««««"
+                  .addField("»»»»»Moderator«««««")
                   
                   message.channel.send(hembed)
                   
