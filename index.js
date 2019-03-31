@@ -36,19 +36,20 @@ switch(args[0]) {
                   break;
                   
 }
-         if cmd === '$(prefix)kick' {
-                  
-                  let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[1]));
-                  if(!kUser) return message.channel.send("Не найден указаный участник")
-                  let kReason = args.join(" ").slice(22);
-                  if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("Вам нельзя это делать!");
-                  if(kUser.hasPermission("ADMINISTRATOR")) return message.channel.send("Этот человек не может быть кикнутым");
-                  
-                  message.guild.member(kUser).kick(kReason)
-                  
-                  message.channel.send("Участник был кикнут")
-                  
-                  return;
-         }
          
+         if cmd === `${prefix}kick` {
+
+if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("Нет")
+if (!kUser.hasPermission("ADMINISTRATOR")) return message.channel.send("Нельзя кикнуть админа")
+let kUser = message.mentions.users.first() || message.guild.members.get(args[0])
+
+if (!kUser) return message.channel.send("Не найден участник")
+
+let kReason = args.join(" ").slice(22)
+
+message.guild.member(kUser).kick(kReason)
+message.channel.send("ОК")
+
+
+}
 });
