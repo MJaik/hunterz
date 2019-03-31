@@ -15,27 +15,11 @@ if(message.channel.type === "dm") return;
 const args = message.content.split(" ");
 
 
-switch(args[0]) {
-
-case prefix + "ping":
- message.channel.send("секунду...").then(m => {
-
-let ping = m.createdTimestamp - message.createdTimestamp
-
-let choices = ["мой ping", "это плохо?" , "наверное это хорошо", "Pong"]
-
-let response = choices[Math.floor(Math.random() * choices.length)]
-
-
-m.edit(`${response}: ${ping}, DISCORD API ping: ${Math.round(client.ping)}`)
-
-          })
-
-             break;
+switch(args[0]) {    
          case prefix + "help":
                   let hembed = new Discord.RichEmbed()
                   .setColor('#66ff66')
-                  .addField(prefix + "ping","узнать пинг бота")
+                  .addField(Тут ничего нет)
                   
                   message.channel.send(hembed)
                   
