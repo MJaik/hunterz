@@ -26,7 +26,7 @@ switch(args[0]) {
                   .addField(prefix + "warn" + "<@никнейм> <причина>", "Выдать предупреждение")
                   .addField(prefix + "kick" + "<@никнейм> <причина>", "Кикнуть участника")
                   .addField("»»»»»Развлечение«««««", "Команды для веселья")
-                  .addField(prefix + "kiss" "<@никнейм>", "Поцеловать участника/участницу")
+                  .addField(prefix + "kiss" + "<@никнейм>", "Поцеловать участника/участницу")
                   message.channel.send(hembed)
                   
                   break;
