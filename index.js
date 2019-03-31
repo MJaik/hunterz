@@ -35,7 +35,7 @@ switch(args[0]) {
          case prefix + "kick":
                   
 let kUser = message.mentions.users.first() || message.guild.members.get(args[0])
-if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("Нет")
+if (!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send("Нет")
 if (!kUser.hasPermission("ADMINISTRATOR")) return message.channel.send("Нельзя кикнуть админа")
 
 if (!kUser) return message.channel.send("Не найден участник")
