@@ -20,11 +20,12 @@ switch(args[0]) {
                   let hembed = new Discord.RichEmbed()
                   .setColor('#66ff66')
                   .addField("»»»»»Moderator«««««"
-                  prefix + "tempmute" "<@никнейм> <время> <причина>"
-                  prefix + "tempban" "<@никнейм> <время> <причина>")
                   
                   message.channel.send(hembed)
                   
+                  break;
+                  
+         case prefix + "tempban":
                   break;
 }
 });
