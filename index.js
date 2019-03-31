@@ -38,7 +38,7 @@ switch(args[0]) {
 }
          if(cmd === '$(prefix)kick'){
                   
-                  let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+                  let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[1]));
                   if(!kUser) return message.channel.send("Не найден указаный участник")
                   let kReason = args.join(" ").slice(22);
                   if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("Вам нельзя это делать!");
