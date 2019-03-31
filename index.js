@@ -46,6 +46,8 @@ switch(args[0]) {
                   
                   message.guild.member(kUser).kick(kReason)
                   
+                  message.channel.send("Участник был кикнут")
+                  
                   return;
          }
 });
