@@ -3,7 +3,7 @@ const client = new Discord.Client
 let prefix = '1'
 
 
-client.login('NTM0Mzc2MzE5MTA3MDcyMDAx.D3JNGg.y1-HOnQbfMCnQ8iFtG4jgK9whkI')
+client.login('NTYxMjAzMDQ0NzM4NDAwMjYz.XKCHHg.Tvx8BI5Jisc1gbicDPOyy6KTtZY')
 
 
 
