@@ -2,6 +2,8 @@ const Discord = require("discord.js");
 
 const bot = Discord.Client({disableEveryone = true});
 
+client.login(process.env.BOT_TOKEN)
+
 bot.on("ready", async () => {
   bot.user.setActivity("Привет!", {type: "STREAMING"});
 })
@@ -19,5 +21,3 @@ bot.on("message", async message => {
     return message.channel.send("Привет!");
   }
 })
-
-bot.login(botconfig.token);
